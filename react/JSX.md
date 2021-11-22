@@ -136,9 +136,9 @@ function BlueDatePicker() {
 
 ## 사용자 정의 컴포넌트는 반드시 대문자로 시작
 
-엘리먼트가 소문자로 시작하는 경우에는 <div> 나 <span> 같은 내장 컴포넌트를 뜻하며 'div', 'span'과 같은 문자열 형태로 React.createElement에 전달됨
+엘리먼트가 소문자로 시작하는 경우에는 `<div>` 나 `<span>` 같은 내장 컴포넌트를 뜻하며 'div', 'span'과 같은 문자열 형태로 React.createElement에 전달됨
 
-<Foo />와 같이 대문자로 시작하는 타입들은 React.createElement(Foo)의 형태로 컴파일 되며 js 파일내에 사용자가 정의했거나 import한 컴포넌트를 가리킴
+`<Foo />`와 같이 대문자로 시작하는 타입들은 React.createElement(Foo)의 형태로 컴파일 되며 js 파일내에 사용자가 정의했거나 import한 컴포넌트를 가리킴
 
 ## 실행 중에 타입 선택하기
 
