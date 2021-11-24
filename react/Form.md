@@ -20,7 +20,7 @@ React state를 "신뢰 가능한 단일 출처 (single source of truth)"로 만�
 
 ## textarea 태그
 
-리액트에서 <textarea>는 value 어트리뷰트 대신 사용 ⇒ 한줄 입력을 사용하는 폼과 비슷하게 작성 가능
+리액트에서 `<textarea>`는 value 어트리뷰트 대신 사용 ⇒ 한줄 입력을 사용하는 폼과 비슷하게 작성 가능
 
 ## select 태그
 
