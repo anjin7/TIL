@@ -7,11 +7,10 @@ const gamePlay = document.querySelector("#play");
 const gameCompare = document.querySelector("#play .game--compare");
 const gameResult = document.querySelector("#play .game--result");
 
-const HIDDEN_CLASSNAME = "hidden";
 
 function onResultSubmit(event) {
   event.preventDefault();
-  gamePlay.classList.remove(HIDDEN_CLASSNAME);
+  gamePlay.classList.remove("hidden");
 
   const rangeNum = rangeInput.value;
   const guessNum = parseInt(guessInput.value, 10);
