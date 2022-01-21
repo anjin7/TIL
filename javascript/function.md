@@ -16,7 +16,7 @@ function functionName(parameter) {
 functionName('a');
 
 const functionName = function(parameter) {
-  console.log(`함수! ${parameter});
+  console.log(`함수! ${parameter}`);
 }
 ```
 이 코드는 TypeError가 발생함
@@ -33,3 +33,25 @@ const functionName = function(name, message) {
 console.log(functionName('a', 'good'));
 ```
 
+
+3. Default parameter
+```
+function functionName(name='a', activity='tennis') {
+  console.log(`${name} likes playing ${activity}`);
+}
+```
+디폴트 파라미터는 ES6에서 추가되었음
+
+```
+const defaultPerson = {
+  name: {
+    first: 'Elly',
+    last: 'O',
+  },
+  favActivity: 'tennis',
+};
+
+function logActivity(p=defaultPerson){
+  console.log(`${p.name.first} likes playing ${p.favActivity}`);
+}
+```
