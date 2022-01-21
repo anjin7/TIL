@@ -1,6 +1,6 @@
 # Function
 
-1. 함수선언
+## 1. 함수선언
 ```
 functionName('a');
 
@@ -11,7 +11,7 @@ function functionName(parameter) {
 이 코드는 호이스팅되어 작동함
 
 
-2. 함수표현
+## 2. 함수표현
 ```
 functionName('a');
 
@@ -34,7 +34,7 @@ console.log(functionName('a', 'good'));
 ```
 
 
-3. Default parameter
+## 3. Default parameter
 ```
 function functionName(name='a', activity='tennis') {
   console.log(`${name} likes playing ${activity}`);
@@ -55,3 +55,17 @@ function logActivity(p=defaultPerson){
   console.log(`${p.name.first} likes playing ${p.favActivity}`);
 }
 ```
+
+## 4. Arrow Function
+
+* 객체 반환
+```
+const person = (firstName, lastName) => ({
+  first: firstName,
+  last: lastName,
+});
+
+console.log(person('Elly', 'O'))
+```
+
+### 화살표 함수의 영역
