@@ -13,7 +13,7 @@
       resorts: ["seoul", "pyeongchang", "seongnam"],
       print: function(delay=1000) {
         setTimeout(() => {
-          console.log(this.resorts.jpin(","));
+          console.log(this.resorts.join(", "));
         }, delay);
       }
     };

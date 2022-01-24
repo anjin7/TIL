@@ -89,14 +89,14 @@ console.log(thid); // window{}
 ```
 this를 콘솔에 찍어보면 window 객체임을 알 수 있음
 
-이 것을 해결하기 위해서는 화살표험슈룰 사용하면 this의 영역이 제대로 유지됨
+이 것을 해결하기 위해서는 화살표 함수룰 사용하면 this의 영역이 제대로 유지됨
 
 ```
 let city = {
   resorts: ["seoul", "pyeongchang", "seongnam"],
   print: function(delay=1000) {
     setTimeout(() => {
-      console.log(this.resorts.jpin(","));
+      console.log(this.resorts.join(","));
     }, delay);
   }
 };
