@@ -56,3 +56,11 @@
     console.log('x')
   }
   ```
+
+  never : 작동하지 않는 function
+
+  ```
+  function hello():never{
+
+  }
+  ```
