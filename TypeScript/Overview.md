@@ -2,22 +2,22 @@
 
 ## Type
 
-- Basic type
+### Basic type
 
-  number string boolean
-  number[] string[] boolean[]
-  undefined null
-  any (= escape typescript )
+number string boolean
+number[] string[] boolean[]
+undefined null
+any (= escape typescript )
 
-- Opitional type
+### Opitional type
 
-  ```
-  age?:number
-  ```
+```
+age?:number
+```
 
-  => number or undefined
+=> number or undefined
 
-* Alias
+- Alias
 
   ```
   const Player = {
@@ -29,18 +29,18 @@
 
   type을 할당
 
-- readonly type
+### readonly type
 
-  ```
-  const age: readonly number[] = [1, 2];
-  ```
+```
+const age: readonly number[] = [1, 2];
+```
 
-  => 추가 삭제 변경 모두 불가능
-  수정 할 수 없도록 만드는 속성
+=> 추가 삭제 변경 모두 불가능
+수정 할 수 없도록 만드는 속성
 
-- TypeScript Only
+### TypeScript Only
 
-  unknown : type을 미리 알지 못 할때 사용
+- unknown : type을 미리 알지 못 할때 사용
 
   ```
   let a:unknown;
@@ -49,7 +49,7 @@
   }
   ```
 
-  void : return하는 값이 없는 function
+- void : return하는 값이 없는 function
 
   ```
   function hello(){
@@ -57,10 +57,9 @@
   }
   ```
 
-  never : 작동하지 않는 function
+- never : 작동하지 않는 function
 
   ```
   function hello():never{
-
   }
   ```
