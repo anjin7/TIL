@@ -37,7 +37,13 @@ arguments return값에 대하여 type에 따라 그에 상응하는 type를 가�
 type SuperPrint = <T>(a:T[]) => T
 const superPrint: SuperPrint = (a) => a[0]
 
-const a = superPrint([1,2,3,4]) // a:number[]
-const b = superPrint([true, false, true]) // b:boolean[]
-const c = superPrint(["a", "b", "c"]) // c:string[]
+const a = superPrint([1,2,3,4]) // a:number[] // a:Array<number>
+const b = superPrint([true, false, true]) // b:boolean[] // b:Array<boolean>
+const c = superPrint(["a", "b", "c"]) // c:string[] // c:Array<string>
+```
+
+```
+type A = Array<number>
+
+let a:A =[1,2,3,4]
 ```
