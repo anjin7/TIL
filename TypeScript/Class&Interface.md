@@ -6,20 +6,20 @@ abstract class는 다른 class가 상속받을 수 있지만 직접 새로운 in
 
 ```
 abstract class User{
-constructor(
-private firstname:string,
-private lastname:string,
-public nickname:string
-){
-abstract getNickname():void
-}
+  constructor(
+    private firstname:string,
+    private lastname:string,
+    public nickname:string
+  ){
+    abstract getNickname():void
+  }
 }
 
-class Player extends User{
 // Abstract Method는 Abstract Class를 상속받는 클래스들이 반드시 구현(implement)해야하는 Method
-getNickname(){
-console.log(this.nickname)
-}
+class Player extends User{
+  getNickname(){
+    console.log(this.nickname)
+  }
 }
 ```
 
