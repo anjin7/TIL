@@ -33,7 +33,7 @@ Object의 type을 특정해주기 위해 사용
 
 ```
 interface Person {
-firstName: string;
-lastName: string;
+  firstName: string;
+  lastName: string;
 }
 ```
