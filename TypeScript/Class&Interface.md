@@ -38,6 +38,8 @@ interface Person {
 }
 ```
 
+`*` JavaScript로 compile되지않음
+
 ### Implements
 
 class가 특정 interface를 충족시키는지 확인
