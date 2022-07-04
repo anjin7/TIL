@@ -74,10 +74,10 @@ interface PlayerB {
 interface PlayerB {
   lastName: string
 }
-interface PlayerB {
+interface PlayerB extend PlayerBB {
   health: number
 }
-const playerB: PlayerB ={
+const playerB: PlayerBB ={
   name:"Hong"
   lastName: "Gildong"
   health: 1
