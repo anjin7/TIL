@@ -65,7 +65,9 @@ const playerA: PlayerAA = {
   name: "Hong"
   lastName: "Gildong"
 }
+
 /////
+
 interface PlayerB {
   name: string
 }
@@ -80,5 +82,25 @@ const playerB: PlayerB ={
   lastName: "Gildong"
   health: 1
 }
+```
 
+- abstract class를 대신하여 상속
+
+```
+type PlayerA = {
+  firstName:string
+}
+interface PlayerB {
+  firstNamr: string
+}
+class User implements PlayerA{
+  constructor(
+    public firstName:string
+  ){}
+}
+class User implements PlayerB{
+  constructor(
+    public firstName:string
+  ){}
+}
 ```
