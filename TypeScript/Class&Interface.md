@@ -53,3 +53,32 @@ Type에서는 다시 열어서 새 속성을 추가하는 것이 불가능
 `*`선언병합 : Declaration Merging
 
 => 개인의 취향에 따라서 선택하여 사용
+
+```
+type PlayerA = {
+  name: string
+}
+type PlayerAA = PlayerA & {
+  lastName: string
+}
+const playerA: PlayerAA = {
+  name: "Hong"
+  lastName: "Gildong"
+}
+/////
+interface PlayerB {
+  name: string
+}
+interface PlayerB {
+  lastName: string
+}
+interface PlayerB {
+  health: number
+}
+const playerB: PlayerB ={
+  name:"Hong"
+  lastName: "Gildong"
+  health: 1
+}
+
+```
