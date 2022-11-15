@@ -37,6 +37,7 @@ const age: readonly number[] = [1, 2];
 
 => 추가 삭제 변경 모두 불가능
 수정 할 수 없도록 만드는 속성
+\*js에는 없는 기능
 
 ### TypeScript Only
 
