@@ -15,6 +15,9 @@ const add:Add = (a, b) => a+b;
 
 => React에서 함수로 props를 보낼 때, 어떻게 작동할지 미리 설계 가능
 
+\*js으로 compile되지 않음
+\*function을 구현하는 것은 아님
+
 ## Overloading
 
 동일한 이름에 매개 변수와 매개 변수 타입 또는 리턴 타입이 다른 여러 버전의 함수를 만드는 것
