@@ -20,7 +20,7 @@ const add:Add = (a, b) => a+b;
 
 ## Overloading
 
-동일한 이름에 매개 변수와 매개 변수 타입 또는 리턴 타입이 다른 여러 버전의 함수를 만드는 것
+동일한 이름의 매개 변수와 매개 변수 타입 또는 리턴 타입이 다른 여러 버전의 함수를 만드는 것
 
 Function(=Method) Overloading은 직접 작성하기보다 외부 라이브러리에 자주 보이는 형태로, 하나의 함수가 복수의 Call Signature를 가질 때 발생
 
@@ -53,9 +53,9 @@ let a:A =[1,2,3,4]
 
 ```
 type PrependFunction = {
-    <T,U>(a:T[], b:U): [U,...T[]]
+  <T,U>(a:T[], b:U): [U,...T[]]
 }
 const prepend: PrependFunction = (arr, item) => {
-    return [item, ...arr]
+  return [item, ...arr]
 }
 ```
