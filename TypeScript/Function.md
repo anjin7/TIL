@@ -50,3 +50,12 @@ type A = Array<number>
 
 let a:A =[1,2,3,4]
 ```
+
+```
+type PrependFunction = {
+    <T,U>(a:T[], b:U): [U,...T[]]
+}
+const prepend: PrependFunction = (arr, item) => {
+    return [item, ...arr]
+}
+```
