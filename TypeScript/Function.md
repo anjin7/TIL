@@ -52,10 +52,7 @@ let a:A =[1,2,3,4]
 ```
 
 ```
-type PrependFunction = {
-  <T,U>(a:T[], b:U): [U,...T[]]
-}
-const prepend: PrependFunction = (arr, item) => {
-  return [item, ...arr]
-}
+type Prepend = <T>(items: T[], item: T) => T[];
+
+const prepend: Prepend = (items, item) =>  [item, ...items]
 ```
