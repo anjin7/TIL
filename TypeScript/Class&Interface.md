@@ -38,7 +38,7 @@ interface Person {
 }
 ```
 
-`*` JavaScript로 compile되지않음
+\* JavaScript로 compile되지않음
 
 ```
  Abstract Class는 이를 상속할 각 객체들의 공통점을 찾아 추상화시켜 놓은 것으로,
@@ -57,7 +57,7 @@ class가 특정 interface를 충족시키는지 확인
 Type Alias에서 Interface의 거의 모든 기능을 사용할 수 있으나,
 Type에서는 다시 열어서 새 속성을 추가하는 것이 불가능
 
-`*`선언병합 : Declaration Merging
+\*선언병합 : Declaration Merging
 
 => 개인의 취향에 따라서 선택하여 사용
 
