@@ -27,6 +27,8 @@ class Player extends User{
 - private : 해당 클래스 내에서만 접근 가능 (자식 클래스에서도 접근 불가)
 - protected : 해당 클래스와 자식 클래스에서 접근 가능
 
+\* JS에서는 normal class가 됨
+
 ## Interface
 
 Object의 type을 특정해주기 위해 사용
