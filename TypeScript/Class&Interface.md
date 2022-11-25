@@ -113,3 +113,8 @@ class User implements PlayerB{
   ){}
 }
 ```
+
+## Polymorphism
+
+다른 모양의 코드를 가질 수 있도록 하는 것 => Generic을 사용
+=> placeholder type / not concrete type
