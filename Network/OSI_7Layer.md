@@ -90,6 +90,15 @@ IP 주소 지정(Addressing)
 ```
 
 4. Transport Layer
+
+```
+- 종단 간 신뢰성 있고 정확한 데이터 전송을 담당
+- 송신자와 수신자 간의 신뢰성있고 효율적인 데이터를 전송하기 위하여 오류검출 및 복구,
+  흐름제어와 중복검사 등을 수행
+- 데이터 전송을 위해서 Port 번호를 사용함.(대표적인 프로토콜로 TCP와 UDP가 있음)
+- 전송 계층에서 데이터 단위는 세그먼트(Segment)
+```
+
 5. Session Layer
 6. Presentation Layer
 7. Application Layer
