@@ -2,7 +2,7 @@
 
 true or false
 
-`* " "를 쓰지 않도록 주의`
+`" "를 쓰지 않도록 주의 ("true", "false")`
 
 ## 연산자 not, and, or
 
