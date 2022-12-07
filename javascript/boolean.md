@@ -2,7 +2,7 @@
 
 true or false
 
-`" "를 쓰지 않도록 주의 ("true", "false")`
+`" "를 쓰지 않도록 주의 ( "true", "false" : string => true, false : boolean)`
 
 ## 연산자 not, and, or
 
