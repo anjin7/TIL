@@ -78,3 +78,11 @@ arr1[0] = 0;
 // console.log(arr1, arr2);
 // [0,2,3] [1,2,3,4]
 ```
+
+## Array Method
+
+### 기본 Method
+
+### 고차함수 Method
+
+## Spread & Destructuring
