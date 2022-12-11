@@ -17,3 +17,64 @@
 - 접근은 상대적으로 느림 (일반 객체보다는 빠름), 중간요소의 추가나 제거는 빠름
 - 특정 자료형 전용 배열도 있음 - 더 빠름
 ```
+
+## Array 생성
+
+### Literal
+
+```
+const arr1 = [];
+const arr2 = [1,2,3];
+```
+
+### Function
+
+```
+const arr1 = new Array(3);
+// arr1.length가 3인 빈(undefined) 배열
+
+const arr2 = new Array(1,2,3);
+// console.log(arr2);
+// [1,2,3]
+
+const arr3 = new Array('ABC');
+// console.log(arr3);
+// [ABC]
+```
+
+### Method
+
+#### of
+
+인자가 하나여도 이를 요소로 갖는 배열 생성
+
+```
+const arr1 = Array.of(3);
+// console.log(arr1);
+// [3]
+```
+
+#### from
+
+배열, 유사배열객체, 이터러블을 인자로 받아 배열 반환
+
+```
+const arr1 = Array.from([1,2,3]);
+const arr2 = Array.from({
+  '0' : true,
+  '1' : false,
+  '2' : null,
+});
+```
+
+\* Array.from은 얕은 복사 - 1단계 깊이만 복사
+
+```
+const arr1 = [1, 2, 3];
+const arr2 = Array.from(arr1);
+arr2.push(4);
+arr1[0] = 0;
+
+// console.log(arr1, arr2);
+// [0,2,3] [1,2,3,4]
+```
