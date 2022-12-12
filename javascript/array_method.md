@@ -56,15 +56,50 @@ console.log(
 
 #### indexOf, lastIndexOf
 
-앞/뒤에서 첫 번째 값의 인덱스 반환
-(없을 시 -1 반환)
+앞/뒤에서 첫 번째 값의 인덱스 반환 (없을 시 -1 반환)
+
+```
+const arr = [1, 2, 3, 2, 1];
+
+console.log(
+  arr.indexOf(2),
+  arr.lastIndexOf(2),
+  arr.indexOf(4)
+);
+// 1 3 -1
+```
 
 #### join
 
 인자로 주어진 값으로 구분하여 요소들을 문자열로 연결하여 반환
 
-### 배열을 변경하는 기본 Method
+```
+const arr1 = ['a', 'b', 'c', 'd', 'e'];
 
-### 고차함수 Method
+console.log(
+  arr1.join()
+);
+// 인자가 없다면 쉼표`,`
+// a,b,c,d,e
+
+console.log(
+  arr1.join('')
+);
+// abcde
+```
+
+```
+const arr2 = [
+  1, true, null, undefined, '가나다', { x: 0 }, [1, 2, 3]
+];
+console.log(
+  arr2.join(':')
+);
+// 1:true:::가나다:[object Object]:1,2,3
+```
+
+## 배열을 변경하는 기본 Method
+
+## 고차함수 Method
 
 ## Spread & Destructuring
