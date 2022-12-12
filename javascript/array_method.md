@@ -54,6 +54,24 @@ console.log(
 
 인자로 주어진 요소 유무 확인 (true or false)
 
+```
+const obj1 = { x: 1, y: 2 };
+const obj2 = { x: 1, y: 2 };
+
+const arr = [
+  obj1,
+  { x: 3, y: 4 }
+];
+
+console.log(
+  arr.includes(obj1),
+  arr.includes(obj2),
+  arr.includes({ x: 1, y: 2 }),
+  arr.includes({ x: 3, y: 4 })
+);
+// true false false false
+```
+
 #### indexOf, lastIndexOf
 
 앞/뒤에서 첫 번째 값의 인덱스 반환 (없을 시 -1 반환)
@@ -99,6 +117,54 @@ console.log(
 ```
 
 ## 배열을 변경하는 기본 Method
+
+#### push
+
+배열 뒤에 값을 추가
+
+```
+const arr = [1, 2, 3];
+const x = arr.push(4);
+
+console.log(x, arr);
+// 4 [1, 2, 3, 4]
+```
+
+#### unshift
+
+배열 앞에 값을 추가
+
+```
+const arr = [5, 6, 7];
+const x = arr.unshift(4);
+
+console.log(x, arr);
+// 4 [4, 5, 6, 7]
+```
+
+#### pop
+
+배열 뒤에서 값을 제거하여 반환
+
+```
+const arr = [1, 2, 3, 4, 5];
+const x = arr.pop();
+
+console.log(x, arr);
+// 5 [1, 2, 3, 4]
+```
+
+#### shift
+
+배열 앞에서 값을 제거하여 반환
+
+```
+const arr = [1, 2, 3, 4, 5];
+const x = arr.shift();
+
+console.log(x, arr);
+// 1 [2, 3, 4, 5]
+```
 
 ## 고차함수 Method
 
