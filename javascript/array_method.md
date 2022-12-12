@@ -2,7 +2,7 @@
 
 ## 특정 값을 반환하는 기본 Method
 
-- isArray
+- #### isArray
 
 배열인지 여부(true or false)를 반환
 
@@ -37,7 +37,7 @@ for (const item of arrays) {
 }
 ```
 
-- at
+- #### at
 
 주어진 인자를 인덱스로 값을 반환 (음수:뒤에서 접근)
 
@@ -50,7 +50,7 @@ console.log(
 // a b d c
 ```
 
-- includes
+- #### includes
 
 인자로 주어진 요소 유무 확인 (true or false)
 
@@ -72,7 +72,7 @@ console.log(
 // true false false false
 ```
 
-- indexOf, lastIndexOf
+- #### indexOf, lastIndexOf
 
 앞/뒤에서 첫 번째 값의 인덱스 반환 (없을 시 -1 반환)
 
@@ -87,7 +87,7 @@ console.log(
 // 1 3 -1
 ```
 
-- join
+- #### join
 
 인자로 주어진 값으로 구분하여 요소들을 문자열로 연결하여 반환
 
@@ -118,7 +118,7 @@ console.log(
 
 ## 배열을 변경하는 기본 Method
 
-- push
+- #### push
 
 배열 뒤에 값을 추가
 
@@ -130,7 +130,7 @@ console.log(x, arr);
 // 4 [1, 2, 3, 4]
 ```
 
-- unshift
+- #### unshift
 
 배열 앞에 값을 추가
 
@@ -142,7 +142,7 @@ console.log(x, arr);
 // 4 [4, 5, 6, 7]
 ```
 
-- pop
+- #### pop
 
 배열 뒤에서 값을 제거하여 반환
 
@@ -154,7 +154,7 @@ console.log(x, arr);
 // 5 [1, 2, 3, 4]
 ```
 
-- shift
+- #### shift
 
 배열 앞에서 값을 제거하여 반환
 
@@ -166,7 +166,7 @@ console.log(x, arr);
 // 1 [2, 3, 4, 5]
 ```
 
-- splice
+- #### splice
 
 원하는 위치에 요소(들)을 추가 및 삭제(2개 이상의 인자를 받음)
 
@@ -184,7 +184,7 @@ console.log(arr);
 // [4, '가', '나', '다]
 ```
 
-- fill
+- #### fill
 
 배열을 특정 값으로 채움
 
@@ -197,7 +197,7 @@ console.log(arr1);
 // [7, 7, 7, 7, 7, 7]
 ```
 
-- reverse
+- #### reverse
 
 배열의 순서를 뒤집음
 
