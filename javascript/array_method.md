@@ -267,5 +267,3 @@ console.log(arr3); // [1, 2, 3, 4, 5, 6, 7, 8]
 ```
 
 ## 고차함수 Method
-
-## Spread & Destructuring
