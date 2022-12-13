@@ -212,6 +212,59 @@ console.log(arr);
 - 원본 배열을 수정하지 않음
 - 얕은 복사본
 
+- ### concat
+
+배열에 다른 배열이나 값을 이어붙인 결과를 반환
+
+```
+const arr1 = [1, 2, 3];
+const arr2 = ['a', 'b', 'c'];
+const arr3 = [true, false];
+const arr4 = arr1.concat(arr2);
+
+console.log(arr4);
+// [1, 2, 3, 'a', 'b', 'c']
+// 원본 배열은 변화 없음
+```
+
+- ### slice
+
+인자로 주어진 범주의 값을 잘라 반환(1~2개 인자를 받음)
+
+```
+const arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const arr2 = arr1.slice(3);
+const arr3 = arr1.slice(3, 7);
+
+console.log(arr2, arr3);
+// [4, 5, 6, 7, 8, 9] [4, 5, 6, 7]
+// 원본 배열은 변화 없음
+```
+
+- ### flat
+
+인자로 주어진 깊이만큼 배열을 펼쳐 반환
+
+```
+const orgArr = [
+  1, 2,
+  [3, 4],
+  [5, [6, [7, 8]]]
+];
+
+// 인자가 없으면 1을 넣은 것과 같음
+const arr0 = orgArr.flat();
+const arr1 = orgArr.flat(1);
+const arr2 = orgArr.flat(2);
+const arr3 = orgArr.flat(3);
+
+console.log(arr0); // [1, 2, 3, 4, 5, [6, [7, 8]]]
+console.log(arr1); // [1, 2, 3, 4, 5, [6, [7, 8]]]
+console.log(arr2); // [1, 2, 3, 4, 5, 6, [7, 8]]
+console.log(arr3); // [1, 2, 3, 4, 5, 6, 7, 8]
+```
+
 ## 고차함수 Method
 
 ## Spread & Destructuring
