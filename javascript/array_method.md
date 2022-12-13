@@ -20,7 +20,7 @@ console.log(
 ```
 const arrays = [
   [], [1, 2, 3], new Array(),
-  // ⚠️ instanceof에서는 결과가 다름
+  // instanceof에서는 결과가 다름
   Array.prototype // 배열임
 ];
 
@@ -209,8 +209,9 @@ console.log(arr);
 
 ## 새 배열을 반환하는 Method
 
-- 원본 배열을 수정하지 않음
-- 얕은 복사본
+\* 원본 배열을 수정하지 않음
+
+\* 얕은 복사
 
 - ### concat
 
