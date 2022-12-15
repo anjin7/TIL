@@ -46,13 +46,13 @@ Math.SQRT2
 
 ## 정적 Method
 
-#### Math.random()
-
-0과 1 사이의 난수를 반환
-
 #### Math.abs(x)
 
 숫자의 절댓값을 반환
+
+#### Math.random()
+
+0과 1 사이의 난수를 반환
 
 ##
 
@@ -97,22 +97,12 @@ x의 y 제곱을 반환
 0개 이상의 인수에서 제일 작은 수를 반환
 
 ```
-
 Math.exp(x)
 E^x 를 반환
 x는 인수이며 E 는 오일러 상수(2.718...) 또는 자연로그의 밑
 
 Math.expm1(x) (en-US)
 exp(x)에서 1을 뺀 값을 반환
-
-Math.fround(x)
-인수의 가장 가까운 단일 정밀도 표현을 반환
-
-Math.hypot([x[, y[, …]]]) (en-US)
-인수의 제곱합의 제곱근을 반환
-
-Math.imul(x, y)
-두 32비트 정수의 곱을 반환
 
 Math.log(x)
 숫자의 자연로그(e를 밑으로 하는 로그, 즉 ln) 값을 반환
@@ -126,8 +116,26 @@ Math.log10(x) (en-US)
 Math.log2(x)
 숫자의 밑이 2인 로그를 반환
 
+
+Math.fround(x)
+인수의 가장 가까운 단일 정밀도 표현을 반환
+
+Math.hypot([x[, y[, …]]]) (en-US)
+인수의 제곱합의 제곱근을 반환
+
+Math.imul(x, y)
+두 32비트 정수의 곱을 반환
+
 Math.sign(x)
 x의 양의 수인지 음의 수인지 나타내는 부호를 반환
+
+Math.clz32(x) (en-US)
+주어진 32비트 정수의 선행 0 개수를 반환
+
+Math.toSource() Non-standard
+문자열 "Math"를 반환
+
+< 삼각함수 >
 
 Math.sin(x)
 숫자의 사인 값을 반환
@@ -140,11 +148,6 @@ Math.tan(x)
 
 Math.tanh(x)
 숫자의 쌍곡탄젠트 값을 반환
-
-Math.toSource() Non-standard
-문자열 "Math"를 반환
-
-
 
 Math.cos(x) (en-US)
 숫자의 코사인 값을 반환
@@ -172,8 +175,4 @@ Math.atanh(x) (en-US)
 
 Math.atan2(y, x) (en-US)
 인수 몫의 아크탄젠트 값을 반환
-
-Math.clz32(x) (en-US)
-주어진 32비트 정수의 선행 0 개수를 반환
-
 ```
