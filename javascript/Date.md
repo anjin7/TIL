@@ -55,3 +55,30 @@ console.log(
 );
 // Sat Aug 20 2022 14:35:47 GMT+0900
 ```
+
+## 정적 Method
+
+### now
+
+\- 현재의 밀리초 숫자값 (UTC 1970/1/1 자정부터 경과값) 반환
+
+```
+console.log(Date.now());
+// 1671265409989
+```
+
+### parse, UTC
+
+\- 주어진 시간의 밀리초 숫자값 반환
+
+\- parse는 dateString, UTC는 단위별 숫자
+
+```
+console.log(
+  Date.parse('August 20, 2022 00:00:00 UTC')
+);
+console.log(
+  // 월은 0부터 시작
+  Date.UTC(2022, 7, 20, 0, 0, 0)
+);
+```
