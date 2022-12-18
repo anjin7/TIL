@@ -124,3 +124,19 @@ console.log(
   now.toLocaleString('ko-KR')
 );
 ```
+
+### setter, getter Method
+
+```
+const now = new Date();
+
+const year = now.getFullYear();
+const month = now.getMonth() + 1;
+const date = now.getDate();
+const day = '일월화수목금토'[now.getDay()];
+
+console.log(
+  `오늘은 ${year}년 ${month}월 ${date}일, ${day}요일입니다.`
+);
+// 오늘은 2022년 12월 18일, 일요일입니다.
+```
