@@ -82,3 +82,45 @@ console.log(
   Date.UTC(2022, 7, 20, 0, 0, 0)
 );
 ```
+
+## Instance Method
+
+### toString, toDateString, toTimeString
+
+\- 각각 전체, 날짜만, 시간만 나타내는 문자열 출력
+
+\- 시스템(컴퓨터)의 언어 설정별로 다르게 나타남
+
+```
+const now = new Date();
+
+console.log(
+  now.toString()
+); // Sun Dec 18 2022 23:37:32 GMT+0900
+console.log(
+  now.toDateString()
+); // Sun Dec 18 2022
+console.log(
+  now.toTimeString()
+); // 23:37:32 GMT+0900
+```
+
+### toLocaleString
+
+\- 주어진 언어 코드를 기준으로 표현한 문자열 반환
+
+\- 인자가 없을 시 시스템의 언어 적용
+
+```
+const now = new Date();
+
+console.log(
+  now.toString()
+);
+console.log(
+  now.toLocaleString()
+);
+console.log(
+  now.toLocaleString('ko-KR')
+);
+```
