@@ -6,7 +6,7 @@
 
 \- Number 타입만 지원 (BigInt 사용 불가)
 
-## 정적 property
+## Static property
 
 #### Math.E
 
@@ -44,7 +44,7 @@ Math.SQRT2
 2의 제곱근. 약 1.414.
 ```
 
-## 정적 Method
+## Static Method
 
 #### Math.abs(x)
 

@@ -56,7 +56,7 @@ console.log(
 // Sat Aug 20 2022 14:35:47 GMT+0900
 ```
 
-## 정적 Method
+## Static Method
 
 ### now
 
