@@ -39,3 +39,13 @@ console.log(
   new Number([1, 2, 3])
 );
 ```
+
+### new 없이 사용하면 생성자로서가 아닌 Number 함수는 주어진 인자를 숫자로 변환하여 반환
+
+```
+const num1 = Number('123');     // number 123
+const num2 = Number('-123.45'); // number -123.45
+const num3 = Number(true);      // number 1
+const num4 = Number(false);     // number 0
+const num5 = Number(null);      // number 0
+```
