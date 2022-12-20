@@ -140,3 +140,23 @@ console.log(
 );
 // 오늘은 2022년 12월 18일, 일요일입니다.
 ```
+
+### getTime, setTime
+
+\- 밀리초 숫자값을 set/get
+
+```
+const date1 = new Date(2020, 7, 20);
+const date1value = date1.getTime();
+
+console.log(date1.toString());
+console.log(date1value);
+
+const date2 = new Date();
+
+console.log(date2.toString());
+
+date2.setTime(date1value);
+
+console.log(date2.toString());
+```
