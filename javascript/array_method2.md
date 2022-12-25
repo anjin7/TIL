@@ -6,7 +6,7 @@
 
 ### forEach
 
-`각 요소를 인자로 콜백함수 실행`
+#### 각 요소를 인자로 콜백함수 실행
 
 \- for문의 좋은 대체제
 
@@ -39,4 +39,23 @@ arr.forEach((itm, idx) => {
 // 30 2
 // 40 3
 // 50 4
+```
+
+### map
+
+#### 각 요소를 주어진 콜백함수로 처리한 새 배열 반환
+
+```
+const orgArr = [1, 2, 3, 4, 5];
+
+const arr1 = orgArr.map(i => i + 1);
+const arr2 = orgArr.map(i => i * i);
+const arr3 = orgArr.map(i => i % 2 ? '홀수' : '짝수');
+console.log(arr1);
+console.log(arr2);
+console.log(arr3);
+
+// [2, 3, 4, 5, 6]
+// [1, 4, 9, 16, 25]
+// ['홀수', '짝수', '홀수', '짝수', '홀수']
 ```
