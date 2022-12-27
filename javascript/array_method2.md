@@ -73,3 +73,13 @@ console.log(arr3);
 **findIndex** `첫 번째 값의 Index 반환`
 
 **findLastIndex** `마지막 값의 Index 반환`
+
+### some, every
+
+**어떤/모든 요소가 기준을 충족하는지 확인**
+
+콜백함수에 인자로 넣은
+
+**some** `요소들 중 하나라도 true를 반환하는가 여부 반환`
+
+**every** `모든 요소가 true를 반환하는가 여부 반환`
