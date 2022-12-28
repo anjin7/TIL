@@ -4,7 +4,7 @@
 
 함수형 프로그래밍 : 변수 사용 없이 순회 작업들을 코딩
 
-### forEach
+## forEach
 
 **각 요소를 인자로 콜백함수 실행**
 
@@ -41,7 +41,7 @@ arr.forEach((itm, idx) => {
 // 50 4
 ```
 
-### map
+## map
 
 **각 요소를 주어진 콜백함수로 처리한 새 배열 반환**
 
@@ -60,7 +60,7 @@ console.log(arr3);
 // ['홀수', '짝수', '홀수', '짝수', '홀수']
 ```
 
-### find, findLast, findIndex, findLastIndex
+## find, findLast, findIndex, findLastIndex
 
 **주어진 기준으로 검색**
 
@@ -74,7 +74,7 @@ console.log(arr3);
 
 **findLastIndex** `마지막 값의 Index 반환`
 
-### some, every
+## some, every
 
 **어떤/모든 요소가 기준을 충족하는지 확인**
 
@@ -83,3 +83,21 @@ console.log(arr3);
 **some** `요소들 중 하나라도 true를 반환하는가 여부 반환`
 
 **every** `모든 요소가 true를 반환하는가 여부 반환`
+
+## filter
+
+**주어진 기준을 충족하는 요소들로 새 배열 만들어 반환**
+
+`원본 배열을 수정하지 않음`
+
+```
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+const odds = arr.filter(i => i % 2);
+const evens = arr.filter(i => !(i % 2));
+const largerThan3 = arr.filter(i => i > 3);
+
+console.log(odds);              // [1, 3, 5, 7, 9]
+console.log(evens);             // [2, 4, 6, 8]
+console.log(largerThan3);       // [4, 5, 6, 7, 8, 9]
+```
