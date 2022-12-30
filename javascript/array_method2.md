@@ -138,8 +138,10 @@ console.log(arr.sort());
 ```
 // 숫자일 때
 const arr = [1, 3, 5, 7, 2, 4, 6];
-arr.sort((a,b)=>a-b);        // 오름차순
-console.log(arr)             // [1, 2, 3, 4, 5, 6, 7]
-arr.sort((a,b)=>b-a);        // 내림차순
-console.log(arr)             // [7, 6, 5, 4, 3, 2, 1]
+
+arr.sort((a, b) => a - b);        // 오름차순
+console.log(arr)                  // [1, 2, 3, 4, 5, 6, 7]
+
+arr.sort((a, b) => b - a);        // 내림차순
+console.log(arr)                  // [7, 6, 5, 4, 3, 2, 1]
 ```
