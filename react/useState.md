@@ -6,7 +6,7 @@
 import React, { useState } from 'react';
 
 function Example() {
-  // 새로운 state 변수를 선언하고, 이것을 count라 부르겠습니다.  
+  // 새로운 state 변수를 선언하고, 이것을 count라 부르겠습니다.
 const [count, setCount] = useState(0);
 ```
 
@@ -30,26 +30,30 @@ state의 초기값
 
 ## state가져오기
 
-  `<p>You clicked {count} times</p>`
+```
+<p>You clicked {count} times</p>
+```
 
 ## state 갱신하기
 
-  `<button onClick={() => setCount(count + 1)}>`    
+```
+  <button onClick={() => setCount(count + 1)}>`
 
-      `Click me
-   </button>`
+    Click me
+  </button>
+```
 
 ### 예시
 
 ```
-1:  import React, { useState } from 'react'; 
+1:  import React, { useState } from 'react';
 2:
 3:  function Example() {
-4:    const [count, setCount] = useState(0); 
+4:    const [count, setCount] = useState(0);
 5:
 6:    return (
-7:      <div> 
-8:        <p>You clicked {count} times</p> 
+7:      <div>
+8:        <p>You clicked {count} times</p>
 9:        <button onClick={() => setCount(count + 1)}>
 10:         Click me
 11:        </button>
