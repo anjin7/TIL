@@ -23,7 +23,8 @@ const user = {
 };
 
 const element = (
-  <h1>    Hello, {formatName(user)}!
+  <h1>
+    Hello, {formatName(user)}!
   </h1>
 );
 
@@ -162,7 +163,7 @@ function Story(props) {
 }
 ```
 
-## JSX  안에서의 prop 사용
+## JSX 안에서의 prop 사용
 
 ### JavaScript Expressions as Props
 
@@ -208,7 +209,7 @@ function App2() {
 
 두 컴포넌트는 동일
 
-전개 연산자는 유용하지만 불필요한 prop을 컴포넌트에 넘기거나 유효하지 않은 HTML 속성들을 DOM에 넘기기도함 
+전개 연산자는 유용하지만 불필요한 prop을 컴포넌트에 넘기거나 유효하지 않은 HTML 속성들을 DOM에 넘기기도함
 
 ## JSX에서 자식 다루기
 
