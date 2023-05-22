@@ -68,7 +68,7 @@ console.log(arr); // ["a", "b", "c", "x"];
 console.log(withArr); // ["a", "b", "c", "d"];
 ```
 
-### findLast & findLastIndex
+## findLast & findLastIndex
 
 find | findLast
 
