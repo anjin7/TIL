@@ -57,4 +57,19 @@ const newArr = arr.toSpliced(1,2) // ["a", "d"]
 
 ### with
 
+```
+const x = ["a", "b", "c", "x"];
+x[3] = "d";
+console.log(x); // ["a", "b", "c", "d"]
+->
+const arr = ["a", "b", "c", "x"];
+const withArr = arr.with(3, "d");
+console.log(arr); // ["a", "b", "c", "x"];
+console.log(withArr); // ["a", "b", "c", "d"];
+```
+
 ### findLast & findLastIndex
+
+find | findLast
+
+findIndex | findLastIndex
