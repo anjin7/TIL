@@ -70,6 +70,32 @@ console.log(withArr); // ["a", "b", "c", "d"];
 
 ## findLast & findLastIndex
 
-find | findLast
+### find | findLast
 
-findIndex | findLastIndex
+주어진 판별 함수를 만족하는 ( 첫번째 | 마지막 ) 요소의 값을 반환
+
+```
+const array = [5, 12, 8, 130, 44];
+
+const found1 = array.find(element => element > 10);
+console.log(found1); // 12
+
+const found2 = array.findLast((element) => element > 45);
+console.log(found2); // 130
+
+```
+
+### findIndex | findLastIndex
+
+주어진 판별 함수를 만족하는 배열의 ( 첫 번째 | 마지막 ) 인덱스를 반환하고, 요소가 존재하지 않으면 -1을 반환
+
+```
+const array = [5, 12, 8, 130, 44];
+
+const found1 = array.findIndex(element => element > 10);
+console.log(found1); // 1
+
+const found2 = array.findLastIndex((element) => element > 45);
+console.log(found2); // 3
+
+```
