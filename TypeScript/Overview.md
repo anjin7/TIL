@@ -29,6 +29,12 @@ age?:number
 
   type을 할당
 
+- Tuple
+
+배열 타입 특수한 형태로 사용
+
+tuple에 명시적으로 지정된 형식에 따라 아이템 순서를 설정해야 되고, 추가되는 아이템 또한 tuple에 명시된 타입만 사용 가능
+
 ### readonly type
 
 ```
