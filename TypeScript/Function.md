@@ -16,7 +16,18 @@ const add:Add = (a, b) => a+b;
 => React에서 함수로 props를 보낼 때, 어떻게 작동할지 미리 설계 가능
 
 \*js으로 compile되지 않음
+
 \*function을 구현하는 것은 아님
+
+```
+type Mix = <T>(a: T[], b: T[]) => T[]
+
+const mix: Mix = (firstArr, secondArr) => [...firstArr, ...secondArr];
+
+const mixed = mix([1, 2, 3], [4, 5, 6]);
+
+console.log(`Mix: ${mixed}`)
+```
 
 ## Overloading
 
