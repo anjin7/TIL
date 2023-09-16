@@ -80,10 +80,10 @@ const playerA: PlayerAA = {
 interface PlayerB {
   name: string
 }
-interface PlayerB {
+interface PlayerBB extend PlayerB {
   lastName: string
 }
-interface PlayerB extend PlayerBB {
+interface PlayerBB {
   health: number
 }
 const playerB: PlayerBB ={
