@@ -33,6 +33,20 @@ console.log(`Mix: ${mixed}`)
 
 동일한 이름의 매개 변수와 매개 변수 타입 또는 리턴 타입이 다른 여러 버전의 함수를 만드는 것
 
+```
+type Add ={
+  (a: number, b: number): number;
+  (a: number, b: number, c: number): number;
+}
+const add: Add = (a: number, b: number, c?: number) => {
+  if(c){
+    return a + b + c;
+  }else{
+    return a + b;
+  }
+}
+```
+
 Function(=Method) Overloading은 직접 작성하기보다 외부 라이브러리에 자주 보이는 형태로, 하나의 함수가 복수의 Call Signature를 가질 때 발생
 
 ## Polymorphimsm
